@@ -1,0 +1,13 @@
+<!-- app/templates/index.html -->
+<!doctype html>
+<html>
+  <head><title>Index</title></head>
+  <body>
+    <h1>Welcome</h1>
+    <!-- reflected XSS demo: value injected for teaching (discuss auto-escaping) -->
+    <p>Hello, {{ name }}</p>
+    <p>Try: <a href="/?name=<script>alert('xss')</script>">Reflected XSS</a></p>
+    <p><a href="/login">Login</a></p>
+    <p><a href="/upload">Upload (unsafe deserialize demo)</a></p>
+  </body>
+</html>

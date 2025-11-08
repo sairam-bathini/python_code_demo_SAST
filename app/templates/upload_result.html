@@ -1,0 +1,10 @@
+<!-- app/templates/upload_result.html -->
+<!doctype html>
+<html>
+  <body>
+    <h2>Upload result</h2>
+    <p>Saved path: {{ path }}</p>
+    <p>Deserialize result: {{ result }}</p>
+    <p>Access uploaded file: <a href="/uploads/{{ path.split('/')[-1] }}">Open file</a></p>
+  </body>
+</html>
